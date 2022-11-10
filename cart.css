@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    font: 1em sans-serif;
+}
+.nav{
+    width:100%;
+    background-color: rgb(50, 174, 177);
+
+}
+.nav>.navtop{
+    width:85%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    color:white
+}
+.nav>.navtop>h4{
+    padding-top: 10px;
+}
+.nav>.navtop>img{
+    width:10%;
+    height:50px;
+}
+input{
+   
+    width:650px;
+    height:45px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: 1px solid white;
+    font-size: 15px;
+
+}
+.main{
+    width:75%;
+    margin: auto;
+
+}
+.main>.cont>img{
+    width:60%;
+    height:25%;
+    border-radius: 5px;
+}
+
+.cont{
+    display:flex;
+    justify-content: space-around;
+}
+.promo{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:15px;
+    border-radius: 5px;;
+    color:gray
+}
+.promo>h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.promo>p{
+    padding-left: 20px;
+}
+.main>h1{
+    margin:25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+#cart1{
+    width:62%;
+    /* height:175px; */
+    margin-top:10px ;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#cart1>div>div{
+    display: flex;
+    
+   
+}
+#cart1>div{
+display: flex;
+padding-top: 15px;
+padding-bottom: 15px;
+
+}
+#cart1>div>div>div>img{
+width:40%;
+
+}
+#cart1>div>div:nth-child(1){
+    width:70%
+}
+#cart1>div>div>button{
+height:35px;
+margin-top: 90px;
+margin-left: 10px;
+font-size: 13px;
+border-radius: 5px;
+border: 1px solid white;
+color: gray;
+}
+
+#cart1>div>div>div>h2~h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cont2{
+    display:flex
+}
+
+.cont2>.payment{
+    margin-top: 20px;
+    margin-left: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:1px solid white;
+    width:28%;
+   padding-left: 20px;
+   padding-top: 15px;
+    color:gray;
+    height:200px
+
+}
+.payment>h3{
+    padding-top: 15px;
+}
+.payment>button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.emptycart>img{
+    width:30%;
+    margin: auto;
+}
+.payment>button{
+    width:30%;
+    height:30px;
+    background-color: rgb(50, 174, 177);
+    color:white;
+    border:1px solid white;
+    border-radius: 5px;
+}
+.payment>h3{
+    color:black
+}
