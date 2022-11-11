@@ -8,7 +8,6 @@ let data=[
         "id": "1"
     },
     {
-        
         "createdAt": "2022-11-08T02:15:54.908Z",
         "tittle": " Patanjali Dant Kanti Tooth Paste - Natural",
         "img": " https://www.netmeds.com/images/product-v1/150x150/413967/patanjali_dant_kanti_tooth_paste_natural_200_gm_0.jpg",
@@ -93,7 +92,7 @@ let data=[
         "tittle": " Biotique Himalayan Plum Refreshing Body",
         "img": " https://www.netmeds.com/images/product-v1/150x150/13081/biotique_himalayan_plum_refreshing_body_soap_150_gm_0_1.jpg",
         "price": 87,
-        "category": "Oral Care",
+        "category": " Oral Care ",
         "id": "12"
     },
     {
@@ -101,7 +100,7 @@ let data=[
         "tittle": " Pee Safe Adult Diaper Extra Large High",
         "img": " https://www.netmeds.com/images/product-v1/150x150/1019512/pee_safe_adult_diaper_extra_large_high_absorbency_pack_of_10_1s_430417_0_1.jpg",
         "price": 68,
-        "category": "Body Care",
+        "category": " Body Care ",
         "id": "13"
     },
     {
@@ -109,7 +108,7 @@ let data=[
         "tittle": " Comfrey Easywear Diapers Pants (XXL)",
         "img": " https://www.netmeds.com/images/product-v1/150x150/408383/comfrey_easywear_diapers_pants_xxl_10_s_0.jpg",
         "price": 57,
-        "category": "Oral Care",
+        "category": " Oral Care ",
         "id": "14"
     },
     {
@@ -117,7 +116,7 @@ let data=[
         "tittle": " Maxi Candy Toothbrush (Buy 1 Get",
         "img": " https://www.netmeds.com/images/product-v1/150x150/1004100/maxi_candy_toothbrush_buy_1_get_1_free_1s_0_0.jpg",
         "price": 51,
-        "category": "Hair care",
+        "category": " Hair care ",
         "id": "15"
     },
     {
@@ -125,7 +124,7 @@ let data=[
         "tittle": " Insta Glow Gold Bleach 30 Gm",
         "img": " https://www.netmeds.com/images/product-v1/150x150/944260/insta_glow_gold_bleach_30_gm_0_2.jpg",
         "price": 46,
-        "category": "Senior Care",
+        "category": " Senior Care ",
         "id": "16"
     },
     {
@@ -133,7 +132,7 @@ let data=[
         "tittle": " Friends Adult Dry Pants - Classic (L) 10's",
         "img": " https://www.netmeds.com/images/product-v1/150x150/924123/friends_adult_dry_pants_classic_l_10s_0_1.jpg",
         "price": 86,
-        "category": "Body Care",
+        "category": " Body Care ",
         "id": "17"
     },
     {
@@ -141,7 +140,7 @@ let data=[
         "tittle": " Abzorb Dusting Powder 100gm",
         "img": " https://www.netmeds.com/images/product-v1/150x150/323943/abzorb_dusting_powder_100gm_39756_0_2.jpg",
         "price": 1037,
-        "category": "Senior Care",
+        "category": " Senior Care ",
         "id": "18"
     },
     {
@@ -149,7 +148,7 @@ let data=[
         "tittle": " Lifree Extra Absorb Adult Diaper Pants (XL)",
         "img": " https://www.netmeds.com/images/product-v1/150x150/1007447/lifree_extra_absorb_adult_diaper_pants_xl_10s_0_0.jpg",
         "price": 164,
-        "category": "Senior Care",
+        "category": " Senior Care ",
         "id": "19"
     },
     {
@@ -157,40 +156,14 @@ let data=[
         "tittle": " You & Me Active Toothbrush & Tongue",
         "img": " https://www.netmeds.com/images/product-v1/150x150/1004095/you_me_active_toothbrush_buy_1_get_1_free_0_1.jpg",
         "price": 835,
-        "category": "Body Care",
+        "category": " Body Care ",
         "id": "20"
     }
 ]
 
-function sortfunc(){
-    let s=document.querySelector("#shift1").value
-    
-    if(s=="low"){
-        let sortdata=data.sort((a,b)=>{
-            return (a.price) - (b.price)
-        })
-        displaymain2(sortdata)
-    }else{
-        let sortdata=data.sort((a,b)=>{
-            return (b.price) - (a.price)
-        })
-        displaymain2(sortdata)
-    }
-}
-sortfunc()
-function mychange(){
-    let myda=document.querySelector("#search1").value
-    let newarr=data.filter((ele)=>{
-        return ele.category.toLowerCase().includes(myda.toLowerCase()) || ele.tittle.toLowerCase().includes(myda.toLowerCase())
-    })
-    displaymain2(newarr)
-}
-mychange()
-let cart_count=(localStorage.getItem("count"))|| 0
-let cartitem=JSON.parse(localStorage.getItem("cartitem")) || [];
 displaymain2(data)
 function displaymain2(data){
-    document.querySelector("#main2").innerHTML=""
+    document.querySelector(".main2").innerHTML=""
     data.forEach((ele) => {
         
         let div=document.createElement("div")
@@ -209,7 +182,6 @@ function displaymain2(data){
 
         let btn=document.createElement("button")
         btn.innerText="ADD TO CART"
-        btn.setAttribute("class","add")
         btn.addEventListener("click",function(){
             cart_count++
             localStorage.setItem("count",cart_count)
@@ -222,9 +194,23 @@ function displaymain2(data){
 
         div.append(img,tittle,cat,price,btn)
 
-        document.querySelector("#main2").append(div)
+        document.querySelector(".main2").append(div)
     });
+
+    let flag=0;
+setInterval(slider,3000)
+
+function slider(){
+    if(flag%2==0){
+        document.querySelector(".sld").setAttribute("src","")
+        document.querySelector(".sld").setAttribute("src","https://www.netmeds.com/images/cms/aw_rbslider/slides/1667582526_Cgg_web.jpg")
+        
+    }else{
+        document.querySelector(".sld").setAttribute("src","")
+        document.querySelector(".sld").setAttribute("src","https://www.netmeds.com/images/cms/aw_rbslider/slides/1667582972_Aroma-magic_web.jpg")
+    }
+    flag++
+}
     
 
 }
-

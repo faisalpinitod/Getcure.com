@@ -14,6 +14,7 @@ function displaycart(data){
      let img=   document.createElement("img")
      divu.setAttribute("class","emptycart")
         img.setAttribute("src","https://www.netmeds.com/msassets/images/emptycart.svg")
+       
         divu.append(img)
         document.querySelector("#cart1").append(divu)
         
@@ -89,4 +90,19 @@ function removefun(elem,i){
     data1.splice(i,1)
     displaycart(data1)
     localStorage.setItem("cart",JSON.stringify(data1))
+}
+
+let flag=0;
+setInterval(slider,3000)
+
+function slider(){
+    if(flag%2==0){
+        document.querySelector(".sld").setAttribute("src","")
+        document.querySelector(".sld").setAttribute("src","https://www.netmeds.com/images/cms/aw_rbslider/slides/1667832124_cartbannercan.jpg")
+
+    }else{
+        document.querySelector(".sld").setAttribute("src","")
+        document.querySelector(".sld").setAttribute("src","https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362196_569x90cddhs.jpg")
+    }
+    flag++
 }
