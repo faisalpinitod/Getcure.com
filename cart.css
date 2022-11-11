@@ -20,8 +20,8 @@
 .nav>.navtop>h4{
     padding-top: 10px;
 }
-.nav>.navtop>img{
-    width:10%;
+.nav>.navtop>a>img{
+    width:148%;
     height:50px;
 }
 input{
@@ -145,4 +145,8 @@ color: gray;
 }
 .payment>h3{
     color:black
+}
+
+button:hover{
+    cursor: pointer;
 }
