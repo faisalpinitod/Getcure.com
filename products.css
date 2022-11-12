@@ -32,15 +32,20 @@
     color:white
 }
 input{
-   
-    width:650px;
+    width:550px;
     height:45px;
-    border-radius: 6px;
+    border-radius: 5px;
     padding-left: 10px;
-    margin-left: 42px;
     border: 1px solid white;
     font-size: 15px;
+    margin-left: 0px;
 
+}
+#search{
+    height:45px;
+    border:1px solid white;
+    border-radius:5px ;
+    margin-right: -67px;
 }
 .nav>.navbottom{
     width:85%;

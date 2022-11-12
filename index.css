@@ -26,19 +26,29 @@
 .nav>.navtop>h4{
     padding-top: 10px;
 }
+.nav>.navtop>a>h4{
+    padding-top: 10px;
+    color:white
+}
 .nav>.navtop>img{
     width:10%;
     height:50px;
 }
 input{
-   
-    width:650px;
+    width:550px;
     height:45px;
-    border-radius: 6px;
+    border-radius: 5px;
     padding-left: 10px;
     border: 1px solid white;
     font-size: 15px;
+    margin-left: 0px;
 
+}
+#search{
+    height:45px;
+    border:1px solid white;
+    border-radius:5px ;
+    margin-right: -37px;
 }
 .nav>.navbottom{
     width:85%;
@@ -248,5 +258,7 @@ width:65%
             .cate2>div>a>img{
                 padding-left: 33px;
             }
-
+            #med{
+                color:rgb(227, 214, 214)
+            }
 
