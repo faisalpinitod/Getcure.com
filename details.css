@@ -9,65 +9,25 @@
 }
 .nav>.navtop{
     width:85%;
-    margin: auto;
+    
     padding-top: 20px;
     padding-bottom: 15px;
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
+  
+    margin-left: 170px;
     color:white
 }
-.nav>.navtop>h4{
-    padding-top: 10px;
-}
+
 .nav>.navtop>a>img{
-    width:148%;
+    width:10%;
     height:50px;
 }
-input{
-    width:550px;
-    height:45px;
-    border-radius: 5px;
-    padding-left: 10px;
-    border: 1px solid white;
-    font-size: 15px;
-    margin-left: 0px;
 
-}
-#search{
-    height:45px;
-    border:1px solid white;
-    border-radius:5px ;
-    margin-right: -83px;
-}
 .main{
     width:75%;
     margin: auto;
 
 }
-.main>.cont>img{
-    width:60%;
-    height:25%;
-    border-radius: 5px;
-}
 
-.cont{
-    display:flex;
-    justify-content: space-around;
-}
-.promo{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding:15px;
-    border-radius: 5px;;
-    color:gray
-}
-.promo>h2{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.promo>p{
-    padding-left: 20px;
-}
 .main>h1{
     margin:25px;
     font-size: 25px;
@@ -80,6 +40,7 @@ input{
     padding-right: 10px;
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 25px;
 }
 #cart1>div>div{
     display: flex;
@@ -119,11 +80,11 @@ color: gray;
 }
 
 .cont2>.payment{
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border:1px solid white;
-    width:28%;
+    width:25%;
    padding-left: 20px;
    padding-top: 15px;
     color:gray;
@@ -156,3 +117,79 @@ color: gray;
 button:hover{
     cursor: pointer;
 }
+.cont{
+    display:flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width:93%;
+    margin-top: 35px;
+    height:45px;
+    color: white;
+    background-color: rgb(21, 27, 57);
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.bgm{
+    display: flex;
+    
+    width:30%;
+    font-size: 15px;
+    margin-right: 30px;
+    
+
+}
+.bgm>div>p{
+    padding-left: 40px;
+    
+    width:90%;
+    margin-right:15px
+}
+
+.bgm>div:nth-child(1){
+    color:gray
+}
+.bgm>div:nth-child(3){
+    color:gray
+}
+.cont>#or{
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+#details{
+    width:46%;
+    margin-left:190px ;
+    margin-top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+#details>div{
+    width: 90%;
+    margin: auto;
+}
+#details h1{
+    color:red;
+    padding-top: 20px;
+}
+#add>input{
+    width:80%;
+    border:0px solid white;
+    height:40px
+
+}
+#add>h5{
+    margin-top: 20px;
+    color:rgb(50, 174, 177);
+}
+#but{
+    margin-left: 50px;
+    margin-top: 25px;
+    background-color: rgb(50, 174, 177);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
