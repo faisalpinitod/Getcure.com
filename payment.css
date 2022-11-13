@@ -1,0 +1,108 @@
+*{
+    margin:0px;
+    font: 1em sans-serif;
+}
+.nav{
+    width:100%;
+    background-color: rgb(50, 174, 177);
+
+}
+.nav>.navtop{
+    width:85%;
+    
+    padding-top: 20px;
+    padding-bottom: 15px;
+  
+    margin-left: 170px;
+    color:white
+}
+
+.nav>.navtop>a>img{
+    width:10%;
+    height:50px;
+}
+
+.rapper{
+    width:30%;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 30px;
+    display: flex-start;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.input_box{
+    padding-top: 20px;
+}
+
+.input{
+    padding-top: 20px;
+    
+}
+.input>input{
+    width:25%;
+    height:25px;
+    margin-top:5px
+}
+
+.rapper>h2{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.input_box>input{
+    width:80%;
+    height:40px;
+    border:0.1px solid gray
+
+}
+.input1>h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+.input1>input{
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+.input1{
+    width:50%
+
+}
+.input1>label{
+    margin-right: 15px;
+}
+
+.input2>h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+.input2>input{
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.input2{
+    width:50%
+
+}
+.input2>label{
+    margin-right: 15px;
+}
+
+.name{
+    width:82%;
+    height:45px;
+    color:gray
+}
+
+#sub{
+    height:45px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color:rgb(50, 174, 177);
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    width:82%
+}

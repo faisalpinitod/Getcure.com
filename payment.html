@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="navtop">
+            <a href="index.html"><img  src="https://i.postimg.cc/DZZnqXqC/logo.jpg" alt=""></a>
+        </div>
+    </nav>
+    <div class="rapper">
+        <h2>Payment Form</h2>
+        <form id="form">
+          <h4>Account</h4>
+          <div class="mainname">
+            <div class="input_box">
+              <input type="text" id="text" placeholder="Full Name" class="name"/>
+            </div>
+            <div class="input_box">
+              <input type="text" id="text"placeholder="Name on Card" class="name" />
+              
+            </div>
+          </div>
+          <div class="DOB">
+            <div class="input" id="text">
+              <h4>Date Of Birth</h4>
+              <input type="text" placeholder="DD" required class="dob" />
+              <input type="text" placeholder="MM" required class="dob" />
+              <input type="text" placeholder="YYYY" required class="dob" />
+            </div>
+            <div class="input1" id="text">
+              <h4>Gender</h4>
+              <input type="radio" name="gender" class="radio" id="b1" checked />
+              <label for="b1">Male</label>
+              <input type="radio" name="gender" class="radio" id="b2" />
+              <label for="b2">Female</label>
+            </div>
+          </div>
+          <div class="card">
+            <div class="input2">
+              <h4>Payment Details</h4>
+              <input type="radio" name="pay" class="radio" id="bc1" checked />
+              <label for="bc1"
+                ><span>Credit Card</span></label
+              >
+              <input type="radio" name="pay" class="radio" id="bc2" />
+              <label for="bc2"
+                ></i>Paypal</span></label
+              >
+            </div>
+          </div>
+          <div class="atm">
+            <div class="input_box">
+              <input
+                type="text"
+                id="card"
+                class="name"
+                placeholder="Enter Card Number 1111 2222 3333 4444"
+                required
+              />
+            </div>
+          </div>
+          <div class="atmpin">
+            <div class="input_box">
+              <input
+                type="password"
+                id="cvv"
+                class="name"
+                placeholder="Enter CVV"
+                required
+              />
+            </div>
+          </div>
+          <div class="cal">
+              <div class="input_box">
+                <select  class="name">
+                  <option value="">Card Expiry Month</option>
+                  <option value="Jan">Jan</option>
+                  <option value="Feb">Feb</option>
+                  <option value="Mar">Mar</option>
+                  <option value="Apr">Apr</option>
+                  <option value="May">May</option>
+                  <option value="Jun">Jun</option>
+                  <option value="Jul">Jul</option>
+                  <option value="Aug">Aug</option>
+                  <option value="Sep">Sep</option>
+                  <option value="Oct">Oct</option>
+                  <option value="Nov">Nov</option>
+                  <option value="Dec">Dec</option>
+                </select>
+              </div>
+            <div class="input_box">
+              <select  class="name">
+                <option>Card Expiry Year</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+                <option>2031</option>
+              </select>
+            </div>
+          </div>
+        
+            <div class="box">
+              <button id="sub" type="submit">PAY NOW</button>
+            </div>
+        </form>
+      </div>
+</body>
+</html>
+<script>
+    let b=document.querySelector("#sub").addEventListener("click",myfun)
+
+    function myfun(){
+        // b=document.querySelector("#sub").value 
+        let c=document.querySelector("#card").value
+        if(c.length<12 || c.length>12){
+          alert("Wrong Card Details")
+        }else{
+          alert("Your Payment Is Successfull,Your Order Is On The Way")
+        }
+        
+    }
+
+   
+</script>
