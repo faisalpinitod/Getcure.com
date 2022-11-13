@@ -44,10 +44,10 @@
             </p>
             <h4>VERIFYING NUMBER</h4>
             <p>We have sent 6 digit OTP on +91-1234567890</p>
-            <input type="number" placeholder="Enter OTP">
+            <input id="num" type="number" placeholder="Enter OTP">
             <hr>
 
-            <a href="details.html"><button>VERIFY OTP</button></a> 
+            <a id="bun"><button>VERIFY OTP</button></a> 
         </div>
     </div>
     
@@ -57,3 +57,16 @@
     </div>
     
 </body>
+<script>
+    let m=document.querySelector("#bun").addEventListener("click",myfun) 
+    myfun()
+function myfun(event){
+    event.preventDefault()
+    let n=document.querySelector("#num").value 
+    if(n.length<6 || n.length>6){
+        alert("Please Type Correct OTP")
+    }else{
+        window.open("details.html")
+    }
+}
+</script>
